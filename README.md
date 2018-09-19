@@ -8,6 +8,7 @@
 * In class
     
 * At home
+
     i. register Heroku,Github
 
     ii. install Django,Anaconda
@@ -16,4 +17,5 @@
 * **每周任務原始碼**
     
 * **每周任務可執行的 heroku 網址連結**
+
     <https://agile-caverns-80149.herokuapp.com/>
