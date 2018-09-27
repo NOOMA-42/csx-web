@@ -26,7 +26,7 @@
 
 * **每周課程任務執行介紹**
     
-    In class
+    **In class**
      
      i. 投影片: https://ppt.cc/fODSux
      
@@ -34,7 +34,7 @@
      
      iii. basic HTML/CSS
 
-    At home
+    **At home**
 
      i. beautify my template
 
