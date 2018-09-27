@@ -5,15 +5,15 @@
 
 ---
 * **每周課程任務執行介紹**
-* In class
+    In class
     
-* At home
+    At home
 
-    i. register Heroku,Github
+        i. register Heroku,Github
 
-    ii. install Django,Anaconda
+        ii. install Django,Anaconda
 
-    iii. learn heroku and git
+        iii. learn heroku and git
 * **每周任務原始碼**
     
 * **每周任務可執行的 heroku 網址連結**
