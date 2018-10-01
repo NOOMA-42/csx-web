@@ -46,3 +46,35 @@
 * **每周任務可執行的 heroku 網址連結**
 
     <https://agile-caverns-80149.herokuapp.com/>
+
+--------------------------------------------------------------------------
+共學的時候，跟更多同學互動，開始認識大家的名字
+學會 Django Template Language 基礎
+了解 views 如何和 template 進行互相控制，並且修改自己的網頁(具體目標待確認)
+用 for loop 來顯示一個圖片的清單 (修改 template 的 html，加入模板語言)
+
+* **每周課程任務執行介紹**
+
+    **In class**
+
+     i. 共學的時候，跟更多同學互動，開始認識大家的名字
+
+     ii. 學會 Django Template Language 基礎
+
+     iii. 了解 views 如何和 template 進行互相控制，並且修改自己的網頁(具體目標待確認)
+
+     iv.  用 for loop 來顯示一個圖片的清單 (修改 template 的 html，加入模板語言)
+
+     v. {{ & {%
+
+    **At home**
+
+     i. beautify my template 處理不同瀏覽器跑版
+
+* **每周任務原始碼**
+
+    in html view.py
+
+* **每周任務可執行的 heroku 網址連結**
+
+    <https://agile-caverns-80149.herokuapp.com/>
