@@ -70,10 +70,12 @@
     **At home**
 
      i. beautify my template 處理不同瀏覽器跑版
+     
+     ii. 改用flexbox
 
 * **每周任務原始碼**
 
-    in html view.py
+    in static and template, view.py
 
 * **每周任務可執行的 heroku 網址連結**
 
