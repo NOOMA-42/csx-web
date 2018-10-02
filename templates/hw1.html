@@ -6,10 +6,10 @@
   </head>
   <body>
     <div class='container'>
-      {{for i in ttt}}
+      {% for i in ttt %}
       <div class='row'> 
-        {{for t in ttt}}
-        <div class='col'>
+        {% for t in ttt %}
+        <div class='col' :hover>
           <div class='preview'>
             <img src='../static/css/404_preview-320x180.jpg'>
           </div>
@@ -23,9 +23,9 @@
             </div>
           </div>
         </div>
-        {{endfor}}      
+        {%endfor%}     
       </div>
-      {{endfor}}
+      {%endfor%}
     </div>
   </body>
 </html>
