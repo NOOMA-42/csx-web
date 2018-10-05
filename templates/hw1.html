@@ -2,10 +2,20 @@
 <html>
   <head>
     <meta charset="utf8">
-    <link rel='stylesheet' href='../static/css/hw1.css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <link rel='stylesheet' href='../static/css/hw1.css'>  
   </head>
   <body>
     <div class='container'>
+      <div class="navbar">
+        <form>
+          Account:
+          <input type="text" name="firstname">
+          Password:
+          <input type="text" name="lastname">
+        </form>
+      </div>
       {% for i in ttt %}
       <div class='row'> 
         {% for t in ttt %}
