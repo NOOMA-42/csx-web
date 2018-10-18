@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    {% for i in ttt %}
+    <div class='row'> 
+        {% for t in ttt %}
+        <div class='col' :hover>
+            <div class='preview'>
+                <img src='../static/css/404_preview-320x180.jpg'>
+            </div>
+            <div class='bottom'>
+            <div class='avatar'>
+                <img src='../static/css/pepa.png'>
+            </div>
+            <div class='intro'>
+                <div class='channel'>頻道名稱</div>
+                <div class='ownername'>實況主名稱</div>
+            </div>
+            </div>
+        </div>
+        {%endfor%}     
+    </div>
+    {%endfor%}
+{% endblock %}

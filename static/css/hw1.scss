@@ -12,14 +12,22 @@ body{
     color: beige;
     margin: 20px;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     width: 1200px;
     font-family:fantasy;
+    font-size: 80px;
   }
 }
 
+#note{
+  font-size: 15px
+}
+
 input[type="text"]{
-  background-color: #5c5c5c
+  background-color: #ffffff
 }
 
 .avatar{

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="navbar">
+    <div>Game LiveStreams</div>
+    <div id=note>add games you wanna watch haha  ( directly changing the content of the website haven't been done yet )</div>
+    <div>
+        <form action="/livestream/" method="post">
+            {% csrf_token %}
+            <input type="text" name="game">
+            <input type="submit" value="lol">
+        </form>
+    </div>
+    
+    <div>
+    {% for i in listitem %}
+        <h2>{{ i.name }}</h2>
+    {% endfor %}
+    </div> 
+</div>
+
+{% endblock %}

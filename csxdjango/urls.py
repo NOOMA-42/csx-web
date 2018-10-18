@@ -19,5 +19,6 @@ from hello import views as hello_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-	path('',hello_views.index)
+	path('livestream/',hello_views.livestream),
+    path('',hello_views.homepage)
 ]
