@@ -23,7 +23,8 @@ body{
 }
 
 #note{
-  font-size: 15px
+  font-size: 15px;
+  font-family: monospace; 
 }
 
 input[type="text"]{
@@ -39,6 +40,11 @@ input[type="text"]{
   img{
     width: 100%;
   }
+}
+
+#gamelist{
+  font-size: 15px;
+  font-family: monospace; 
 }
 
 .channel{
