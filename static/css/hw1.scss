@@ -4,8 +4,20 @@ body{
   margin: 0;
 }
 
-.container{
-  background:rgba(0, 0, 0, 0.5);
+#homepage{
+  display: unset;
+}
+
+.inresponsetoback{
+  color: white;
+}
+
+#inresponsetoback{
+  color: white;
+}
+
+.container1{
+  background:rgba(0, 0, 0, 0.8);
   min-height: 100vh;
   padding: 40px;
   .navbar{

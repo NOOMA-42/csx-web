@@ -1,23 +1,29 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% load static %}
 
-<div class="navbar">
-    <div>Game LiveStreams</div>
-    <div id=note>add games you wanna watch haha  ( directly changing the content of the website haven't been done yet )</div>
-    <div>
-        <form action="" method="post">
-            {% csrf_token %}
-            <input type="text" name="game">
-            <input type="submit" value="lol">
+
+
+{% block homepage %}
+<body class="text-center" id="homepage">
+    <div class='container1'> 
+        <form class="form-signin" method="POST" action="">
+        <img class="mb-4" src="{% static 'css/logo.png' %}" alt="" width="100">
+        <h1 class="h3 mb-3 font-weight-normal" id='inresponsetoback'>Live Stream</h1>
+        <label for="inputuser" class="sr-only">Username</label>
+        <input type="text" id="inputuser" class="form-control" placeholder="Username" name="username" required="" autofocus="">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required="">
+        <div class="checkbox mb-3">
+            <label class='inresponsetoback'>
+            <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="location.href='register/'">Register</button>
+        <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
         </form>
     </div>
-    
-    <div id=gamelist>
-    {% for i in listitem %}
-        <h3>{{ i.name }}</h2>
-    {% endfor %}
-    </div> 
-</div>
+</body>
 
 {% endblock %}

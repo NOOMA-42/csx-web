@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 
 class game(models.Model):
@@ -7,5 +6,7 @@ class game(models.Model):
 
     def __game__(self):
         return self.name
+
+
 
 
