@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block homepagehead %}
+<div class="topnav">
+    <a class="active" href=".">LiveStream</a>
+    <a id='logout' onclick="location.href='logout/'">Log out</a>
+</div>
+{% endblock %}
+
 {% block content %}
-    {% if request.user.is_authenticated %}
+    
         {% for i in ttt %}
         <div class='row'> 
             {% for t in ttt %}
@@ -22,8 +31,6 @@
             {%endfor%}     
         </div>
         {%endfor%}
-    {% else %}
-    <div>Please log in</div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit" action='register/'>Register</button>
-    {% endif %}
+        
+    
 {% endblock %}

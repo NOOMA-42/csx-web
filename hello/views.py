@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, redirect, render
+from django.shortcuts import redirect, render
 from hello.models import game
 from django.views.decorators.csrf import csrf_protect
 from django.contrib import auth
@@ -19,11 +19,11 @@ def homepage(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None and user.is_active:
             auth.login(request, user)
-            return redirect('livestream/')
+            return render(request, 'livestream.html', {'ttt': tt,})
         else:
             return render(request, 'homepage.html')
     if request.method == 'GET':
-        return render(request, 'homepage.html', {'ttt': tt,})
+        return render(request, 'homepage.html')
 
 
 def register(request):
@@ -31,11 +31,11 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
-            return redirect('')
+            return render(request, 'homepage.html')
     else:
         form = UserCreationForm()
-    return render_to_response('register.html',locals())
+    return render(request, 'register.html',locals())
 
 def logout(request):
 	auth.logout(request)  
-	return redirect('')
+	return render(request, 'homepage.html')
