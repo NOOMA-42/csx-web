@@ -22,5 +22,6 @@ urlpatterns = [
 	path('livestream/',hello_views.livestream),
     path('',hello_views.homepage),
     path('register/', hello_views.register),
-    path('logout/',hello_views.logout)
+    path('logout/', hello_views.logout),
+    path('login/', hello_views.login)
 ]
